@@ -1,0 +1,10 @@
+.hello
+{
+    color: green;
+    padding: 10%;
+}
+
+.hello__greeting
+{
+    margin-bottom: 12px;
+}

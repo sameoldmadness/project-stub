@@ -6,17 +6,12 @@ block('product-list')(
                 content: ctx.title
             },
             ...ctx.products.map(product => ({
-                elem: 'product',
-                content: [
-                    {
-                        block: 'product',
-                        title: product.title
-                    },
-                    {
-                        elem: 'tagline',
-                        content: product.tagline
-                    }
-                ]
+                elem: 'item',
+                content: {
+                    block: 'product',
+                    title: product.title,
+                    tagline: product.tagline
+                }
             }))
         ]
     },

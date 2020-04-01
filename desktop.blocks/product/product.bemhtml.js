@@ -2,17 +2,22 @@ block('product')(
     {
         content: (node, ctx) => [
             {
-                elem: 'icon'
+                elem: 'wrapper',
+                content: [
+                    {
+                        elem: 'icon',
+                        content: { block: 'klarna-logo-icon' }
+                    },
+                    {
+                        elem: 'title',
+                        content: ctx.title
+                    }
+                ]
             },
-            {
-                elem: 'title',
-                content: ctx.title
+            ctx.tagline && {
+                elem: 'tagline',
+                content: ctx.tagline
             }
         ]
-    },
-    elem('icon')({
-        content: {
-            block: 'klarna-logo-icon'
-        }
-    })
+    }
 )

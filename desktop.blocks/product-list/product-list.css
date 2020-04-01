@@ -1,0 +1,14 @@
+.product-list__header {
+    font-size: 16;
+    line-height: 30px;
+}
+  
+.product-list__tagline {
+    margin-top: 8;
+    margin-bottom: 0;
+    color: #7d7d7d;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 12px;
+}
+  

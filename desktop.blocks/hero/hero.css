@@ -1,0 +1,14 @@
+.hero {
+    margin: 4em 2em;
+}
+  
+.hero__category {
+    margin-bottom: 1.5625rem;
+}
+  
+.hero__text {
+    font-size: 114px;
+    line-height: 115px;
+    margin-bottom: 25px;
+    margin-left: calc(3.125rem / 2);
+}

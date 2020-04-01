@@ -1,3 +1,18 @@
+const products = [
+    {
+      title: "Instalments",
+      tagline: "Interest-free alternative to credit with 3 instalments."
+    },
+    {
+      title: "Pay in 30 days",
+      tagline: "Offer an extra 30 days to pay."
+    },
+    {
+      title: "Financing",
+      tagline: "Gives your customers the option to pay over 6 to 36 months."
+    }
+];
+
 module.exports = {
     block: 'page',
     title: 'Title of the page',
@@ -8,18 +23,17 @@ module.exports = {
     scripts: [{ elem: 'js', url: 'demo.js' }],
     content: [
         {
-            block: 'card',
-            mods: {
-                other: true
-            },
-            title: 'title',
-            description: `
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente modi, necessitatibus sunt illum tempore vero officia non dignissimos iste ducimus laboriosam voluptate totam ad repudiandae, nobis eligendi delectus odit eius? Accusantium voluptatum qui maiores corrupti eaque architecto ullam non eveniet totam. Neque natus reprehenderit, ipsam ea harum molestiae consequatur? Suscipit, voluptatum fugiat provident quaerat, voluptatibus nihil, dolorum dolorem repellendus tempore unde laudantium sunt! Id sequi consequatur repellendus, magnam dicta expedita nihil veritatis accusamus officiis nostrum facilis modi facere voluptate, eligendi aliquid blanditiis odit cumque quis maiores, ipsam omnis nobis beatae. Repellendus laboriosam eaque saepe modi nulla veritatis quasi consectetur.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente modi, necessitatibus sunt illum tempore vero officia non dignissimos iste ducimus laboriosam voluptate totam ad repudiandae, nobis eligendi delectus odit eius? Accusantium voluptatum qui maiores corrupti eaque architecto ullam non eveniet totam. Neque natus reprehenderit, ipsam ea harum molestiae consequatur? Suscipit, voluptatum fugiat provident quaerat, voluptatibus nihil, dolorum dolorem repellendus tempore unde laudantium sunt! Id sequi consequatur repellendus, magnam dicta expedita nihil veritatis accusamus officiis nostrum facilis modi facere voluptate, eligendi aliquid blanditiis odit cumque quis maiores, ipsam omnis nobis beatae. Repellendus laboriosam eaque saepe modi nulla veritatis quasi consectetur.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente modi, necessitatibus sunt illum tempore vero officia non dignissimos iste ducimus laboriosam voluptate totam ad repudiandae, nobis eligendi delectus odit eius? Accusantium voluptatum qui maiores corrupti eaque architecto ullam non eveniet totam. Neque natus reprehenderit, ipsam ea harum molestiae consequatur? Suscipit, voluptatum fugiat provident quaerat, voluptatibus nihil, dolorum dolorem repellendus tempore unde laudantium sunt! Id sequi consequatur repellendus, magnam dicta expedita nihil veritatis accusamus officiis nostrum facilis modi facere voluptate, eligendi aliquid blanditiis odit cumque quis maiores, ipsam omnis nobis beatae. Repellendus laboriosam eaque saepe modi nulla veritatis quasi consectetur.
-`
+            block: 'header',
+            menu: {
+                block: 'product-list',
+                title: 'Zahlungsarten',
+                products,
+            }
+        },
+        {
+            block: 'hero',
+            category: 'Instalments',
+            text: 'Offer 3 interest-free instalments.'
         }
     ]
 };

@@ -1,7 +1,6 @@
 block('header')(
     {
         tag: 'article',
-        js: true,
         mods: {
             closed: true
         },
@@ -24,8 +23,9 @@ block('header')(
         }
     }),
     elem('icon')({
-        content: {
-            block: 'menu-icon'
-        },
+        content: [
+            { block: 'menu-icon' },
+            { block: 'close-icon' },
+        ],
     })
 )

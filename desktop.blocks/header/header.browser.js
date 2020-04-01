@@ -1,29 +1,10 @@
-modules.define('header', function(provide, BEMDOM){
+(() => {
 
-provide(BEMDOM.decl(this.name,
-    {
-        onSetMod: {
-            'js' : {
-                'inited': function() {
-                    alert(1)
+const header = document.querySelector('.header');
+const headerIcon = document.querySelector('.header__icon');
 
-                    // this.bindTo('elem', 'click', function(e) {
-                    //     this.setMod('size', 'big');
-                    // });
+headerIcon.addEventListener('click', () => {
+    header.classList.toggle('header_closed')
+})
 
-                    // console.log(this.params); // { foo : 'bar' }
-                    // this.elem('file')
-                    // this.toggleMod('color', 'green', 'red');
-                }
-            }
-        }
-    },
-    {
-        live: function() {
-            alert(1)
-            // Here you can code when to initialize this block instance
-        }
-    }
-));
-
-});
+})();

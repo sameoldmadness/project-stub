@@ -18,6 +18,7 @@ slidenumbers: true
 ![inline](img/bem2.png)
 
 ---
+
 [.text: Avenir Next Regular]
 
 # BEM Methodology
@@ -123,7 +124,13 @@ Talk is cheap. Show them the code.
 
 ---
 
-# Links
+[.text: Avenir Next Regular]
+[.list: #000000, bullet-character(—)]
 
-- http://getbem.com
-- https://en.bem.info
+With BEM you can **mix** multiple blocks and elements on the same DOM node which allows you to keep the DOM tree clean.
+
+BEM makes an emphasise on **reusability** by distinguishing between independent components (*blocks*) and components that cannot be used on their own (*elements*).
+
+### Links
+
+http://getbem.com, https://en.bem.info

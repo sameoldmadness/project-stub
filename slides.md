@@ -33,6 +33,96 @@ Blocks can be moved around on a page, moved between pages or projects. The imple
 
 ---
 
+The part where I do live coding ~~and embarrass myself~~.
+
+---
+
+# BEM 101
+
+---
+
+# *Block*
+
+# Element
+
+# Modifier
+
+---
+
+[.background-color: #fff]
+
+![fit](img/bem-block.png)
+
+---
+
+# Block
+
+# *Element*
+
+# Modifier
+
+---
+
+[.background-color: #fff]
+
+![fit](img/bem-element.png)
+
+---
+
+# Block
+
+# Element
+
+# *Modifier*
+
+---
+
+[.background-color: #fff]
+
+![fit](img/bem-modifier.png)
+
+---
+
+# Block
+
+# Element
+
+# Modifier
+
+---
+
+# __Component__
+
+# Element
+
+# Modifier
+
+---
+
+# __Component__
+
+# __Component__
+
+# Modifier
+
+---
+
+# __Component__
+
+# __Component__
+
+# __Props__
+
+---
+
+# BEM === CCP
+
+---
+
+Talk is cheap. Show them the code.
+
+---
+
 # Links
 
 - http://getbem.com
